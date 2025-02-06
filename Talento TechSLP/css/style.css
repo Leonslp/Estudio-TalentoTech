@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  background-color: rgb(255, 0, 0);
+  position: fixed;
+  width: 100%;
+  border-bottom: 10px solid orange;
+}
+
+h1 {
+  color: white;
+  font-size: 50px;
+}
+
+.emoji {
+  color: white;
+  font-size: 50px;
+  cursor: pointer;
+  background-color: rgb(255, 132, 132);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+header nav button{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 10px;
+    color:red;
+    cursor: pointer;
+
+}
+
+button:hover{
+    background-color: rgb(255, 132, 132);
+    color:white;
+}
+
+section{
+    position: fixed;
+    margin-top: 30%;
+    margin-left: 40%;
+    border: 3px solid rgb(255, 0, 0);
+    border-radius: 10px;
+    background-color: orange;
+    color:white;
+    cursor:pointer;
+    padding: 10px;
+    box-shadow: 10px 10px 10px orange;
+}
+
+section:hover{
+    background-color: red;
+    box-shadow: 10px 10px 10px rgb(255, 0, 0);
+    border: 3px solid orange;
+    transform: rotate(160deg);
+}
