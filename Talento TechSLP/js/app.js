@@ -106,3 +106,11 @@ Swal.fire({
   }
 });
   }
+
+  function enviar(){
+    Swal.fire({
+      title: "Enviado!",
+      icon: "Felicitaciones",
+      draggable: true
+    });
+  }
