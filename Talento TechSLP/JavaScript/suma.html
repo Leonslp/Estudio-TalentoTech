@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Suma de dos numeros</h1>
+    <form>
+        <input type="number" id="num1" name="num1" value="" placeholder="Digite primer numero" required />
+        <select id="operacion" required>
+            <option value="">Selecciona una operacion</option>
+            <option value="suma">Sumar</option>
+            <option value="resta">Resta</option>
+            <option value="dividir">Dividir</option>
+        </select>
+        <input type="number" id="num2" name="num2" value="" placeholder="Digite segundo numero" required />
+        <!-- <input type="hidden" id="operacion" name="operacion" value="suma" /> -->
+        <br>
+        <br>
+        <button onclick="operar()">Resultado</button>
+
+    </form>
+</body>
+
+</html>
