@@ -1,0 +1,52 @@
+/*Aplicar estilos generales*/
+/*Selector universal*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace;
+    scroll-behavior:smooth;
+}
+
+header{
+    display:flex;
+    justify-content:space-evenly;
+    border-bottom:2px;
+    padding: 10px;
+    background-color: rgb(133, 45, 45);
+    position:fixed;
+    width:100%;
+}
+
+h1{
+    color:white;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+/*Seudo clase*/
+nav a:hover{
+    color:rgb(255, 0, 0)
+}
+
+.loguin{
+    padding:10px;
+    color: rgb(133, 45, 45);
+    background-color: white;
+    border-color: rgb(148, 148, 148);
+    border-radius: 10px;
+}
+
+.loguin:hover{
+    background-color: rgb(255, 0, 0);
+    color:white;
+}
+
+h1{
+    cursor: pointer;
+}
