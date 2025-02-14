@@ -1,52 +1,189 @@
 /*Aplicar estilos generales*/
 /*Selector universal*/
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    font-family:'Courier New', Courier, monospace;
-    scroll-behavior:smooth;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+  scroll-behavior: smooth;
 }
 
-header{
-    display:flex;
-    justify-content:space-evenly;
-    border-bottom:2px;
-    padding: 10px;
-    background-color: rgb(133, 45, 45);
-    position:fixed;
-    width:100%;
+header {
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 2px;
+  padding: 10px;
+  background-color: rgb(133, 45, 45);
+  position: fixed;
+  width: 100%;
 }
 
-h1{
-    color:white;
+h1 {
+  color: white;
 }
 
-nav a{
-    text-decoration: none;
-    color: white;
-    padding: 5px;
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 5px;
 }
 
 /*Seudo clase*/
-nav a:hover{
-    color:rgb(255, 0, 0)
+nav a:hover {
+  color: rgb(255, 0, 0);
 }
 
-.loguin{
-    padding:10px;
-    color: rgb(133, 45, 45);
-    background-color: white;
-    border-color: rgb(148, 148, 148);
-    border-radius: 10px;
+.loguin {
+  padding: 10px;
+  color: rgb(133, 45, 45);
+  background-color: white;
+  border-color: rgb(148, 148, 148);
+  border-radius: 10px;
 }
 
-.loguin:hover{
-    background-color: rgb(255, 0, 0);
-    color:white;
+.loguin:hover {
+  background-color: rgb(255, 0, 0);
+  color: white;
+  transition: 1.4ms;
 }
 
-h1{
-    cursor: pointer;
+h1 {
+  cursor: pointer;
+}
+
+/*Aplicar estilo a las secciones*/
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  border-bottom: 2px solid;
+}
+
+/*Estilos del formulario*/
+
+/* From Uiverse.io by mi-series */
+.container {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 60%;
+  margin-bottom: 2rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.form_area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #eddcd9;
+  height: auto;
+  width: auto;
+  border: 2px solid #264143;
+  border-radius: 20px;
+  box-shadow: 3px 4px 0px 1px #e99f4c;
+}
+
+.title {
+  color: #264143;
+  font-weight: 900;
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+
+.sub_title {
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.form_group {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  margin: 10px;
+}
+
+.form_style {
+  outline: none;
+  border: 2px solid #264143;
+  box-shadow: 3px 4px 0px 1px #e99f4c;
+  width: 290px;
+  padding: 12px 10px;
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+.form_style:focus,
+.btn:focus {
+  transform: translateY(4px);
+  box-shadow: 1px 2px 0px 0px #e99f4c;
+}
+
+.btn {
+  padding: 15px;
+  margin: 25px 0px;
+  width: 290px;
+  font-size: 15px;
+  background: #de5499;
+  border-radius: 10px;
+  font-weight: 800;
+  box-shadow: 3px 3px 0px 0px #e99f4c;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.link {
+  font-weight: 800;
+  color: #264143;
+  padding: 5px;
+}
+
+.cerrar {
+  float: right;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 10px;
+
+}
+
+.cerrar:hover {
+  background-color: rgb(133, 45, 45);
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+/*Estilos para el boton arriba*/
+
+.arriba {
+  display: none;
+  color: white;
+  background-color: rgb(133, 45, 45);
+  border-radius: 20%;
+  text-decoration: none;
+  padding: 10px;
+  border: 2px solid;
+  position: fixed;
+  bottom: 30px;
+  
+}
+
+.arriba:hover {
+  background-color: gray;
+}
+
+
+/*Clase Hermana - Lista de clases*/
+.arriba.activar{
+    display: block;
+    bottom: 30px;
+    transition: 1.3s ease;
 }

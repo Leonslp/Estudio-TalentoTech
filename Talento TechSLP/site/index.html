@@ -7,35 +7,85 @@
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
-  <body>
+  <body id="top">
     <header>
-      <h1 onmousemove="info">¡Pagina chingona!</h1>
+      <h1 onmousemove="info()">¡Pagina chingona!</h1>
       <nav>
         <!--Crear hypervinculos para navegar por la pagina-->
-        <a href="">Inicio</a>
-        <a href="">Nosotros</a>
-        <a href="">Contacto</a>
-        <a href="">Productos</a>
+        <a href="#s1">Seccion 1</a>
+        <a href="#s2">Seccion 2</a>
+        <a href="#s3">Seccion 3</a>
+        <a href="#s4">Seccion 4</a>
       </nav>
 
       <!--Boton de loguin-->
       <div>
-        <button class="loguin">Ingresar</button>
+        <button onclick="ver('formulario')" class="loguin">Ingresar</button>
       </div>
     </header>
 
     <!--Crear secciones-->
-    <section>
-      <h2>Inicio</h2>
+    <section id="s1">
+      <h2>Seccion 1</h2>
     </section>
-    <section>
-      <h2>Nosotros</h2>
+    <section id="s2">
+      <h2>Seccion 2</h2>
     </section>
-    <section>
-      <h2>Contacto</h2>
+    <section id="s3">
+      <h2>Seccion 3</h2>
     </section>
-    <section>
-      <h2>Contacto</h2>
+    <section id="s4">
+      <h2>Seccion 4</h2>
     </section>
+
+    <!--Aqui se coloca el formulario-->
+    <!-- From Uiverse.io by mi-series -->
+    <div id="formulario" class="container">
+      <div class="form_area">
+        <!--Boton de cerrar formulario-->
+        <button onclick="cerrar('formulario')" class="cerrar">X</button>
+        <p class="title">SIGN UP</p>
+        <form action="">
+          <div class="form_group">
+            <label class="sub_title" for="name">Name</label>
+            <input
+              placeholder="Enter your full name"
+              class="form_style"
+              type="text"
+            />
+          </div>
+          <div class="form_group">
+            <label class="sub_title" for="email">Email</label>
+            <input
+              placeholder="Enter your email"
+              id="email"
+              class="form_style"
+              type="email"
+            />
+          </div>
+          <div class="form_group">
+            <label class="sub_title" for="password">Password</label>
+            <input
+              placeholder="Enter your password"
+              id="password"
+              class="form_style"
+              type="password"
+            />
+          </div>
+          <div>
+            <button class="btn">SIGN UP</button>
+            <p>Have an Account? <a class="link" href="">Login Here!</a></p>
+            <a class="link" href=""> </a>
+          </div>
+          <a class="link" href=""> </a>
+        </form>
+      </div>
+      <a class="link" href=""> </a>
+    </div>
+    <!--Fin de formulario-->
+
+    <!--Boton de desplazamiento hacia arriba-->
+    
+    <a id="arriba" class="arriba" href="#top">Arriba</a>
   </body>
 </html>
