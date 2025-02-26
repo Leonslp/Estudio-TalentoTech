@@ -19,7 +19,7 @@ Swal.fire({
     const timer = Swal.getPopup().querySelector("b");
     timerInterval = setInterval(() => {
       timer.textContent = `${Swal.getTimerLeft()}`;
-    }, 100);
+    }, 500);
   },
   willClose: () => {
     clearInterval(timerInterval);
