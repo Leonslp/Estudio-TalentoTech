@@ -12,14 +12,14 @@ Swal.fire({
 Swal.fire({
   title: "Alerta de felicidad",
   html: "Feliz",
-  timer: 2000,
+  timer: 10000,
   timerProgressBar: true,
   didOpen: () => {
     Swal.showLoading();
     const timer = Swal.getPopup().querySelector("b");
     timerInterval = setInterval(() => {
       timer.textContent = `${Swal.getTimerLeft()}`;
-    }, 500);
+    }, 100);
   },
   willClose: () => {
     clearInterval(timerInterval);
